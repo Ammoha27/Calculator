@@ -1,0 +1,44 @@
+
+
+
+.container {
+  background-color: black;
+  height: 40em;
+  width: 30em;
+  align-items: center;
+  border-radius: 2em;
+  margin-left: 50em;
+  margin-top: 10em;
+
+
+}
+
+
+.allrows {
+  margin-left: 3em;
+  padding-top: 10em;
+
+}
+
+.container .number {
+  background-color: #434343;
+  color: white;
+  margin: 0.5em;
+  text-align: center;
+  width: 5em;
+  height: 5em;
+  border-radius: 60%;
+
+}
+
+
+.firstrow, .secondrow, .thirdrow, .operators {
+  display: flex;
+}
+
+.result {
+  color: white;
+  margin-left: 7em;
+  margin-bottom: 2em;
+  font-size: 25px;
+}
