@@ -1,44 +1,158 @@
-
-
-
 .container {
-  background-color: black;
+  background-color: #333;
   height: 40em;
-  width: 30em;
+  width: 22em;
   align-items: center;
-  border-radius: 2em;
-  margin-left: 50em;
-  margin-top: 10em;
-
-
+  border-radius: 1em;
+  margin: 10em auto;
+  padding: 1em;
 }
-
 
 .allrows {
-  margin-left: 3em;
-  padding-top: 10em;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.container .number {
-  background-color: #434343;
+.number, .resultin, .clear {
+  background-color: #555;
   color: white;
   margin: 0.5em;
   text-align: center;
-  width: 5em;
-  height: 5em;
-  border-radius: 60%;
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
+.clear {
+  margin-right: 1em;
+}
+
+.delete {
+  background-color: #555;
+  color: white;
+  margin: 0.5em;
+  text-align: center;
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 1em;
+}
+
+.number:hover, .resultin:hover, .clear:hover {
+  background-color: #666;
 }
 
 
-.firstrow, .secondrow, .thirdrow, .operators {
+
+.firstrow, .secondrow, .thirdrow, .operators, .lastrow {
   display: flex;
+}
+
+
+.lastrow {
+  margin-right: 4.1em;
 }
 
 .result {
   color: white;
-  margin-left: 7em;
-  margin-bottom: 2em;
-  font-size: 25px;
+  margin: 0.5em;
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+}
+
+.divideandresult {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15em;
+  margin-top: -5em;
+}
+.container {
+  background-color: #333;
+  height: 34em;
+  width: 22em;
+  align-items: center;
+  border-radius: 1em;
+  margin: 10em auto;
+  padding: 1em;
+}
+
+.allrows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number, .resultin, .clear {
+  background-color: #555;
+  color: white;
+  margin: 0.5em;
+  text-align: center;
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.clear {
+  margin-right: 1em;
+}
+
+.delete {
+  background-color: #555;
+  color: white;
+  margin: 0.5em;
+  text-align: center;
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 1em;
+}
+
+.number:hover, .resultin:hover, .clear:hover {
+  background-color: #666;
+}
+
+
+
+.firstrow, .secondrow, .thirdrow, .operators, .lastrow {
+  display: flex;
+}
+
+
+.lastrow {
+  margin-right: 4.1em;
+}
+
+.result {
+  color: white;
+  margin: 0.5em;
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+}
+
+.divideandresult {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15em;
+  margin-top: -5em;
+}
+
+.lastlastrow{
+  display: flex;
+  margin-left: 2em;
+  margin-top: 1em;
 }
